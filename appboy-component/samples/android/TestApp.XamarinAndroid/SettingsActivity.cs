@@ -1,0 +1,22 @@
+﻿using Android.OS;
+
+using AndroidX.Fragment.App;
+
+namespace com.appboy.xamarinsample
+{
+  [Android.App.Activity (Label = "TestApp.XamarinAndroid", MainLauncher = true, Icon = "@drawable/icon", Name = "com.appboy.xamarinsample.SettingsActivity")]
+  public class SettingsActivity : FragmentActivity
+  {
+    protected override void OnCreate (Bundle bundle)
+    {
+      base.OnCreate (bundle);
+      SetContentView (Resource.Layout.Main);
+
+      FragmentTransaction fragmentTransaction = SupportFragmentManager.BeginTransaction ();
+      HomeFragment homeFragment = new HomeFragment ();
+      fragmentTransaction.Add (com.appboy.xamarinsample.Resource.Id.root, homeFragment, homeFragment.Class.ToString ());
+      fragmentTransaction.Commit ();
+    }
+  }
+}
+
