@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
     <Reference Include="Mono.Android" />
-    <Reference Include="Java.Interop" />
     <Reference Include="Xamarin.AndroidX.MultiDex">
       <HintPath>..\packages\Xamarin.AndroidX.MultiDex.2.0.1.7\lib\monoandroid90\Xamarin.AndroidX.MultiDex.dll</HintPath>
     </Reference>
@@ -224,6 +223,7 @@
     <Compile Include="HomeFragment.cs" />
     <Compile Include="MainApplication.cs" />
     <Compile Include="SettingsActivity.cs" />
+    <Compile Include="SettingsFragment.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />

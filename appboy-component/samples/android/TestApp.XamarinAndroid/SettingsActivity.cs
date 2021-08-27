@@ -4,7 +4,7 @@ using AndroidX.Fragment.App;
 
 namespace com.appboy.xamarinsample
 {
-  [Android.App.Activity (Label = "TestApp.XamarinAndroid", MainLauncher = true, Icon = "@drawable/icon", Name = "com.appboy.xamarinsample.SettingsActivity")]
+  [Android.App.Activity (Label = "TestApp.XamarinAndroid", Icon = "@drawable/icon", Name = "com.appboy.xamarinsample.SettingsActivity")]
   public class SettingsActivity : FragmentActivity
   {
     protected override void OnCreate (Bundle bundle)
@@ -13,8 +13,8 @@ namespace com.appboy.xamarinsample
       SetContentView (Resource.Layout.Main);
 
       FragmentTransaction fragmentTransaction = SupportFragmentManager.BeginTransaction ();
-      HomeFragment homeFragment = new HomeFragment ();
-      fragmentTransaction.Add (com.appboy.xamarinsample.Resource.Id.root, homeFragment, homeFragment.Class.ToString ());
+      SettingsFragment settingsFragment = new SettingsFragment ();
+      fragmentTransaction.Add (com.appboy.xamarinsample.Resource.Id.root, settingsFragment, settingsFragment.Class.ToString ());
       fragmentTransaction.Commit ();
     }
   }
