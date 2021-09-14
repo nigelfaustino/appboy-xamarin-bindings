@@ -224,6 +224,7 @@
     <Compile Include="MainApplication.cs" />
     <Compile Include="SettingsActivity.cs" />
     <Compile Include="SettingsFragment.cs" />
+    <Compile Include="BrazeDeepLinkHandlerTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml" />
