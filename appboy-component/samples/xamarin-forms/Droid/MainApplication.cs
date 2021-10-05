@@ -6,7 +6,10 @@ using Android.Content;
 using Com.Appboy;
 using Com.Appboy.UI;
 using Com.Appboy.Support;
+using Com.Appboy.Push;
 using Com.Braze;
+using Com.Braze.UI.Inappmessage.Listeners;
+using Com.Braze.Push;
 
 namespace TestAppXamarinForms.Droid
 {
@@ -22,6 +25,7 @@ namespace TestAppXamarinForms.Droid
       AppboyLogger.LogLevel = 2;
       RegisterActivityLifecycleCallbacks (new AppboyLifecycleCallbackListener ());
             AppboyNavigator.SetAppboyNavigator(new CustomAppboyNavigator());
+        
     }
   }
 }
