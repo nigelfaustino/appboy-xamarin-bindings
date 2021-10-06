@@ -7,6 +7,7 @@ using Android.Runtime;
 using Com.Braze;
 using Com.Braze.Support;
 using Firebase.Iid;
+using Com.Appboy.UI;
 
 namespace com.appboy.xamarinsample
 {
@@ -21,6 +22,7 @@ namespace com.appboy.xamarinsample
     {
       BrazeLogger.LogLevel = 0;
       RegisterActivityLifecycleCallbacks(new BrazeActivityLifecycleCallbackListener());
+      AppboyNavigator.SetAppboyNavigator (new BrazeDeepLinkHandlerTest());
 
       new Task(RegisterFirebasePush).Start();
     }

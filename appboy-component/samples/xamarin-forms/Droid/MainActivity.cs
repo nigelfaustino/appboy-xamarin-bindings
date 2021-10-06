@@ -1,6 +1,8 @@
 ﻿using Android.App;
 using Android.Content.PM;
 using Android.OS;
+using Android.Util;
+
 
 namespace TestAppXamarinForms.Droid
 {

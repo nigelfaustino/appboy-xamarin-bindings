@@ -2,6 +2,11 @@
 <resources>
   <!-- General configuration -->
   <!-- The API key is not shown to the user and thus we don't require that it be translated. -->
-  <string translatable="false" name="com_appboy_api_key">94589301-2ebd-4cb4-91ed-aa8dbc0472ed</string>
-  <string translatable="false" name="com_appboy_server_target">STAGING</string>
+  <string translatable="false" name="com_appboy_api_key">11fab10a-d796-4465-9577-a5847aa3d2db</string>
+  <string translatable="false" name="com_appboy_custom_endpoint">sondheim.braze.com</string>
+    <bool translatable="false" name="com_appboy_firebase_cloud_messaging_registration_enabled">true</bool>
+    <string translatable="false" name="com_appboy_firebase_cloud_messaging_sender_id">5014584412</string>
+    <bool name="com_appboy_handle_push_deep_links_automatically">true</bool>
+    <drawable name="com_appboy_push_small_notification_icon">@drawable/icon</drawable>
+
 </resources>

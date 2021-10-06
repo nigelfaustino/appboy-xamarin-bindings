@@ -3,6 +3,11 @@ using Com.Appboy;
 using Com.Appboy.Models;
 using Com.Appboy.UI;
 using Com.Appboy.UI.Inappmessage;
+using Com.Braze;
+using Com.Braze.Models.Inappmessage;
+using Com.Braze.UI.Inappmessage;
+
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 
@@ -15,7 +20,8 @@ namespace TestAppXamarinForms.Droid
     {
     }
     public void LogCustomEvent(String eventName) {
-      Com.Appboy.Appboy.GetInstance (Xamarin.Forms.Forms.Context).LogCustomEvent (eventName);
+            
+            Com.Appboy.Appboy.GetInstance (Xamarin.Forms.Forms.Context).LogCustomEvent (eventName);
     }
 
     public void ShowSlideupIam ()
@@ -23,7 +29,7 @@ namespace TestAppXamarinForms.Droid
       InAppMessageSlideup slideup = new InAppMessageSlideup () {
         Message = "This is a slideup",
       };
-      AppboyInAppMessageManager.Instance.AddInAppMessage (slideup);
+      BrazeInAppMessageManager.Instance.AddInAppMessage (slideup);
     }
 
     public void ShowModalIam ()
@@ -31,7 +37,7 @@ namespace TestAppXamarinForms.Droid
       InAppMessageModal modal = new InAppMessageModal () {
         Message = "This is a modal",
       };
-      AppboyInAppMessageManager.Instance.AddInAppMessage (modal);
+      BrazeInAppMessageManager.Instance.AddInAppMessage (modal);
     }
 
     public void ShowFullIam ()
@@ -39,7 +45,7 @@ namespace TestAppXamarinForms.Droid
       InAppMessageFull full = new InAppMessageFull () {
         Message = "This is a full"
       };
-      AppboyInAppMessageManager.Instance.AddInAppMessage (full);
+      BrazeInAppMessageManager.Instance.AddInAppMessage (full);
     }
   }
 }
